@@ -1,0 +1,100 @@
+body {
+    background-color: orangered;
+    text-align: center;
+}
+
+.about-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.about-1 {
+    height: calc(50vh - 64px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.3)),url("https://images.pexels.com/photos/224924/pexels-photo-224924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+ font-size: 30px;
+ color: orangered;
+ margin: 0;
+}
+
+.about-2  {
+    width: 80vw;
+    background-color: whitesmoke;
+    box-shadow: 0 0 8px;
+    position: relative;
+    border-radius: 20px;
+    top: -150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.about-2 p {
+    text-align: justify;
+    color: rgb(54, 54, 54);
+}
+
+.cards {
+    margin-top: 20px;
+}
+
+.card {
+    box-shadow: 0 0 0;
+    background-color: rgb(9, 9, 95);
+}
+
+.card h1 {
+    margin : 0;
+    color: whitesmoke;
+    font-size: 55px ;
+}
+
+.card p {
+    color: whitesmoke;
+}
+
+.about-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 80vw;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: -75px;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.supporter {
+    width: 64vw;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.about-3 img {
+    width: 20vw;
+}
+
+@media (min-width:640px) {
+    .cards {
+        display: flex;
+        justify-content: center;
+    }
+}
