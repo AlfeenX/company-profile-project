@@ -44,6 +44,23 @@ button {
     font-weight: 700;
 }
 
+label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input,textarea {
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 95);
+    font-family: 'Inter';
+}
+
+#message {
+    height: 30vh;
+    resize: none;
+}
+
 @media (min-width:640px) {
     .container-form {
         width: 600px;

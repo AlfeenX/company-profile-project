@@ -41,7 +41,24 @@ window.addEventListener("resize", () => {
   setAnimationDirection();
 });
 
-function showMenu () {
-    const menu = document.querySelector(".container-dropdown-menu")
-    menu.classList.toggle("reveal-menu")
+function showMenu() {
+  const menu = document.querySelector(".container-dropdown-menu");
+  menu.classList.toggle("reveal-menu");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("vwiUFCkOrmXsn8VEA");
+
+  const form = document.querySelector(".contact-form");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    try {
+      await emailjs.sendForm('service_5bx4vgb','template_4dsm012', form)
+      alert("Message Sent!")
+      form.reset();
+    } catch (error) {
+      alert("Failed to send message: " + error)
+    }
+  });
+});

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="../styles/contact.css">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <meta
       name="description"
       content="PT Surya Construction is a trusted construction company providing high quality building, infrastucture, and renovation "
@@ -16,8 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
       <div class="container-navbar">
@@ -29,7 +29,9 @@
             <li>
               <a href="../pages/services.html" class="nav-list">Services</a>
             </li>
-            <li><a href="../pages/contact.html" class="nav-list">Contact</a></li>
+            <li>
+              <a href="../pages/contact.html" class="nav-list">Contact</a>
+            </li>
           </ul>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -62,30 +64,37 @@
 
     <!-- Main Content -->
     <main>
-        <h1>Contact Us</h1>
-        <p>We'd love to hear from you! Fill out the form below and we'll get back to you soon.</p>
-        <div class="container-form">
-            <form class="contact-form">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-    
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
+      <h1>Contact Us</h1>
+      <p>
+        We'd love to hear from you! Fill out the form below and we'll get back
+        to you soon.
+      </p>
+      <div class="container-form">
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Vanilla Landing. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2024 Vanilla Landing. All rights reserved.</p>
+      </div>
     </footer>
-</body>
-<script src="../script/script.js"></script>
+  </body>
+      <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+  <script src="../script/script.js"></script>
 </html>
