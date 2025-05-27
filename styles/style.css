@@ -5,6 +5,7 @@ body {
   font-family: "Inter";
   width: 100%;
   background-color: whitesmoke;
+  overflow-x: hidden;
 }
 
 header {
@@ -80,6 +81,7 @@ header {
 }
 
 main {
+  min-width: 100%;
   margin: 0;
   margin-top: 64px;
   padding: 0;
@@ -346,4 +348,5 @@ footer p {
 .reveal-menu {
   display: flex;
   opacity: 1;
+  overflow: hidden;
 }
